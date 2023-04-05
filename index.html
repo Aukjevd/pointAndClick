@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Point and Click adventure</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,19 +12,46 @@
     <h1 id ="mainTitle"></h1>
     <div id="gameWindow">
 
+        <div id="dialogeBar" class="gameobject forground">
+            <div id="dialogContent">
+                <div id="brownBar" class="gameobject forground"></div>
+                <img id="hero" class="gameobject forground" src="img/char_walk_right.gif" alt="main character">
+                <div id="mainCharacterSpeach" class="gameobject forground speachBublle"></div>
+                <div id="counterSpeech" class="gameObject foreground speachBublle">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/portairStatue.png"
+                    alt="counter character">
+            </div> 
+        </div>
+
+        <!--forground-->
         <div id ="door" class="gameobject forground"></div>
 
-        <div id ="chest" class="gameobject forground"></div>
+        <div id ="lockedChest" class="gameobject forground"></div>
 
+        <div id ="openChest" class="gameobject forground"></div>        
+
+        <div id ="rock" class="gameobject forground"></div>
+
+        <!--maincharacter-->
         <div id="mainCharacter" class="gameobject character">
             <img src="img/char_walk_right.gif" alt="character">
         </div>
 
+        <!--background-->
         <div id="tilemap" class="gameobject background">
             <img src="img/gamemapAukjeVanDoremalen.jpg" alt="tilemap">
         </div>
 
     </div>
+
+    <!--audio-->
+    <audio id="characterAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/index.js"></script>
 
 <script src="js/index.js"></script>    
 </body>

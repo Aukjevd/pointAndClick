@@ -1,5 +1,5 @@
-*{
-    background-color: #000000;
+body{
+    background-color: #000;
     color: #FFF;
     display: grid;
     grid-template-columns: auto 800px auto;
@@ -9,6 +9,24 @@
     grid-row-start: 1;
     grid-column-start: 2;
     text-align: center;
+}
+
+#dialogeBar{
+    bottom: 0px;
+    left: 0px;
+    width: 800px;
+    height: 64px;
+}
+
+#dialogContent{
+    position: relative;
+    width: 800px;
+    height: 64px;
+}
+
+#mainCharacterSpeach{
+    top: 0px;
+    left: 80px;
 }
 
 #gameWindow{
@@ -32,17 +50,59 @@
     top: 133px;
 }
 
-#chest{
+#openChest{
     width: 13px;
     height: 13px;
     left: 717px;
     top: 112px;
 }
 
+#lockedChest{
+    width: 13px;
+    height: 13px;
+    left: 717px;
+    top: 142px;
+}
+
+#rock{
+    width: 52px;
+    height: 23px;
+    left: 120px;
+    top: 280px;
+}
+
+#brownBar{
+    background-color: rgb(150, 113, 71);
+    width: 800px;
+    height: 40px;
+    bottom: 0px;
+}
+
+#counterSpeech {
+    top: 0px;
+    right: 80px;
+}
+
+#counterCharacter {
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+.speachBublle{
+    background-color: #FFF;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300;
+    transition: all 1s ease-in-out;
+}
+
 .gameobject{
     position: absolute;
     transition: all 1s ease-in-out;
-    background-color: #FFF;
 }
 
 .forground{
